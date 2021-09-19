@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peace Within</title>
+  <!-- Load FontAwesome icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- Load the custom CSS style file -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="firstone">
+  <div class="header">        
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" width="125px">
+          </a>
+        </div>
+
+        <!-- <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="read.html">Reading</a></li>
+            
+          </ul>
+        </nav> -->
+        
+        <img class="menu-icon" src="images/menu.png" onclick="menutoggle()" >
+        </div>
+        </div>
+  </div>
+
+  <!-----------Category------->
+
+  <div class="categories">
+    <div class="small-container">
+      <h1 class=" titlefirst">What Do You Want To Do ?</h1>
+
+    <div class="row">
+      <div class="col-3">
+        <a href="read.html">
+        <img src="images/newcat (1).jpg" alt="" width="450px" height="400px">
+        <h3 class="cate"> Read </h3>
+      </a>
+      </div>
+      <div class="col-3">
+        <a href="music.html">
+        <img src="images/newcat (2).jpg" alt="" width="450px" height="400px">
+        <h3 class="cate"> Listen </h3>
+      </a>
+      </div>        
+      <div class="col-3">          
+      <a href="video.html">
+        <img src="images/newcat (3).jpg" alt="" width="450px" height="400px">
+        <h3 class="cate"> Watch </h3>
+      </a>
+
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!----------Footer---------->
+<div class="footer">
+  <div class="container">
+   <p class="copyright"> Copyright 2020-PeaceWithin</p>
+   <hr>
+ 
+  </div>
+ </div>
+ 
+  <!----------JS for Toggle Menu ---------->
+ 
+  <script>
+    var menuItems= document.getElementById("menuItems");
+    menuItems.style.maxHeight="0px";
+    function menutoggle(){
+      if(menuItems.style.maxHeight=="0px")
+      {
+        menuItems.style.maxHeight="200px"
+      }
+      else{
+        menuItems.style.maxHeight="0px";
+      }
+    }
+  </script>
+ 
+
+
+
+
+  
+  <!-- Load the main script for the player -->
+  <script src="main.js"></script>
+</div>
+</body>
+</html>
